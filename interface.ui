@@ -879,7 +879,7 @@ QLabel{
               <number>7</number>
              </property>
              <property name="bottomMargin">
-              <number>0</number>
+              <number>7</number>
              </property>
              <item alignment="Qt::AlignTop">
               <widget class="QFrame" name="frame">
@@ -2086,7 +2086,7 @@ QLabel{
               <number>7</number>
              </property>
              <property name="bottomMargin">
-              <number>0</number>
+              <number>7</number>
              </property>
              <item>
               <widget class="QFrame" name="frame_7">
