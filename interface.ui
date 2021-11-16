@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>995</width>
-    <height>580</height>
+    <height>583</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -49,26 +49,20 @@ QLabel{
 }
 #card1, #card2, #card3, #card4 {
 	background-color: #fefeff;
-	border-radius: 20px;
+	border-radius: 10px;
 }
 #pushButton, #pushButton_2{
 	background-color: #2596be;
 	color: #fff;
 	border-radius: 10px;
 }
-#widget_4, #widget_5{
-	background-color: #fefeff;
-	border-radius: 20px;
-}
-#headerFrame{
-	background-color: #fefeff;
-	border-radius: 10px;
-}
+
 #pushButton_4{
 	background-color: #fefeff;
 	padding: 10px 5px;
 	text-align: left;
-	border-top-left-radius: 20px;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
 }
 #pushButton_5, #pushButton_6, #pushButton_7{
 	padding: 10px 5px;
@@ -94,12 +88,18 @@ QLabel{
 	border-bottom-right-radius: 8px;
 }
 #frame_20, #frame_11, #frame_8, #frame_26, #frame_40, #frame_55, #frame_56{
+	background-color: rgb(255, 255, 255);
 	border: 1px solid;
 	border-color: rgba(0, 0, 0, 0.1);
 	border-radius: 8px;
 }
-#label_71, #label_72, #label_16{
+#label_71, #label_76, #label_81, #label_72, #label_78, #label_83, #label_16{
 	color: #A1A8B9;
+}
+#label_70, #label_75, #label_80{
+	border-image: url(:/images/assets/images/plant-image.png) 0 0 0 0 stretch stretch;
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
 }</string>
    </property>
    <layout class="QHBoxLayout" name="horizontalLayout">
@@ -120,6 +120,12 @@ QLabel{
     </property>
     <item>
      <widget class="QWidget" name="leftMenu" native="true">
+      <property name="maximumSize">
+       <size>
+        <width>200</width>
+        <height>16777215</height>
+       </size>
+      </property>
       <layout class="QVBoxLayout" name="verticalLayout_8">
        <property name="spacing">
         <number>0</number>
@@ -355,6 +361,21 @@ QLabel{
     <item>
      <widget class="QWidget" name="mainBody" native="true">
       <layout class="QVBoxLayout" name="verticalLayout">
+       <property name="spacing">
+        <number>8</number>
+       </property>
+       <property name="leftMargin">
+        <number>12</number>
+       </property>
+       <property name="topMargin">
+        <number>12</number>
+       </property>
+       <property name="rightMargin">
+        <number>12</number>
+       </property>
+       <property name="bottomMargin">
+        <number>12</number>
+       </property>
        <item alignment="Qt::AlignTop">
         <widget class="QWidget" name="headerFrame" native="true">
          <layout class="QHBoxLayout" name="horizontalLayout_2">
@@ -407,101 +428,6 @@ QLabel{
                </property>
               </widget>
              </item>
-            </layout>
-           </widget>
-          </item>
-          <item alignment="Qt::AlignHCenter">
-           <widget class="QWidget" name="widget_2" native="true">
-            <layout class="QHBoxLayout" name="horizontalLayout_3">
-             <item alignment="Qt::AlignTop">
-              <widget class="QFrame" name="searchFrame">
-               <property name="minimumSize">
-                <size>
-                 <width>160</width>
-                 <height>0</height>
-                </size>
-               </property>
-               <property name="frameShape">
-                <enum>QFrame::StyledPanel</enum>
-               </property>
-               <property name="frameShadow">
-                <enum>QFrame::Raised</enum>
-               </property>
-               <layout class="QHBoxLayout" name="horizontalLayout_4">
-                <property name="spacing">
-                 <number>0</number>
-                </property>
-                <property name="leftMargin">
-                 <number>2</number>
-                </property>
-                <property name="topMargin">
-                 <number>0</number>
-                </property>
-                <property name="rightMargin">
-                 <number>0</number>
-                </property>
-                <property name="bottomMargin">
-                 <number>0</number>
-                </property>
-                <item>
-                 <widget class="QLabel" name="label_2">
-                  <property name="maximumSize">
-                   <size>
-                    <width>25</width>
-                    <height>25</height>
-                   </size>
-                  </property>
-                  <property name="text">
-                   <string/>
-                  </property>
-                  <property name="pixmap">
-                   <pixmap resource="resources.qrc">:/images/assets/images/loupe.png</pixmap>
-                  </property>
-                  <property name="scaledContents">
-                   <bool>true</bool>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QLineEdit" name="lineEdit">
-                  <property name="minimumSize">
-                   <size>
-                    <width>0</width>
-                    <height>30</height>
-                   </size>
-                  </property>
-                  <property name="maxLength">
-                   <number>32763</number>
-                  </property>
-                  <property name="placeholderText">
-                   <string>Search</string>
-                  </property>
-                 </widget>
-                </item>
-               </layout>
-              </widget>
-             </item>
-            </layout>
-           </widget>
-          </item>
-          <item>
-           <widget class="QWidget" name="widget_3" native="true">
-            <layout class="QHBoxLayout" name="horizontalLayout_6">
-             <property name="spacing">
-              <number>0</number>
-             </property>
-             <property name="leftMargin">
-              <number>0</number>
-             </property>
-             <property name="topMargin">
-              <number>0</number>
-             </property>
-             <property name="rightMargin">
-              <number>8</number>
-             </property>
-             <property name="bottomMargin">
-              <number>0</number>
-             </property>
             </layout>
            </widget>
           </item>
@@ -561,7 +487,7 @@ QLabel{
                    </font>
                   </property>
                   <property name="text">
-                   <string>100%</string>
+                   <string>1</string>
                   </property>
                  </widget>
                 </item>
@@ -577,7 +503,7 @@ QLabel{
                    <string/>
                   </property>
                   <property name="pixmap">
-                   <pixmap resource="resources.qrc">:/images/assets/images/happy-face.png</pixmap>
+                   <pixmap resource="resources.qrc">:/figma/assets/icons/figma/HomePage-top-cards-icons/Heart.svg</pixmap>
                   </property>
                   <property name="scaledContents">
                    <bool>true</bool>
@@ -592,13 +518,13 @@ QLabel{
                <property name="font">
                 <font>
                  <family>Roboto</family>
-                 <pointsize>10</pointsize>
+                 <pointsize>12</pointsize>
                  <weight>75</weight>
                  <bold>true</bold>
                 </font>
                </property>
                <property name="text">
-                <string>Satisfied customers</string>
+                <string>Fovorite plants</string>
                </property>
               </widget>
              </item>
@@ -656,7 +582,7 @@ QLabel{
                    <string/>
                   </property>
                   <property name="pixmap">
-                   <pixmap resource="resources.qrc">:/images/assets/images/heart.png</pixmap>
+                   <pixmap resource="resources.qrc">:/figma/assets/icons/figma/HomePage-top-cards-icons/Pots.svg</pixmap>
                   </property>
                   <property name="scaledContents">
                    <bool>true</bool>
@@ -671,13 +597,13 @@ QLabel{
                <property name="font">
                 <font>
                  <family>Roboto</family>
-                 <pointsize>10</pointsize>
+                 <pointsize>12</pointsize>
                  <weight>75</weight>
                  <bold>true</bold>
                 </font>
                </property>
                <property name="text">
-                <string>Flowers you liked</string>
+                <string>Your pots</string>
                </property>
               </widget>
              </item>
@@ -735,7 +661,7 @@ QLabel{
                    <string/>
                   </property>
                   <property name="pixmap">
-                   <pixmap resource="resources.qrc">:/images/assets/images/exclamation-button-mint.png</pixmap>
+                   <pixmap resource="resources.qrc">:/figma/assets/icons/figma/HomePage-top-cards-icons/Water.svg</pixmap>
                   </property>
                   <property name="scaledContents">
                    <bool>true</bool>
@@ -750,13 +676,13 @@ QLabel{
                <property name="font">
                 <font>
                  <family>Roboto</family>
-                 <pointsize>10</pointsize>
+                 <pointsize>12</pointsize>
                  <weight>75</weight>
                  <bold>true</bold>
                 </font>
                </property>
                <property name="text">
-                <string>Flower pots need you</string>
+                <string>Need water!</string>
                </property>
               </widget>
              </item>
@@ -798,7 +724,7 @@ QLabel{
                    </font>
                   </property>
                   <property name="text">
-                   <string>4</string>
+                   <string>1</string>
                   </property>
                  </widget>
                 </item>
@@ -814,7 +740,7 @@ QLabel{
                    <string/>
                   </property>
                   <property name="pixmap">
-                   <pixmap resource="resources.qrc">:/images/assets/images/pots-mint.png</pixmap>
+                   <pixmap resource="resources.qrc">:/figma/assets/icons/figma/HomePage-top-cards-icons/Battery.svg</pixmap>
                   </property>
                   <property name="scaledContents">
                    <bool>true</bool>
@@ -829,13 +755,13 @@ QLabel{
                <property name="font">
                 <font>
                  <family>Roboto</family>
-                 <pointsize>10</pointsize>
+                 <pointsize>12</pointsize>
                  <weight>75</weight>
                  <bold>true</bold>
                 </font>
                </property>
                <property name="text">
-                <string>Your flower pots</string>
+                <string>Battery is low!</string>
                </property>
               </widget>
              </item>
@@ -869,17 +795,20 @@ QLabel{
           <item>
            <widget class="QWidget" name="widget_4" native="true">
             <layout class="QVBoxLayout" name="verticalLayout_6">
+             <property name="spacing">
+              <number>8</number>
+             </property>
              <property name="leftMargin">
-              <number>7</number>
+              <number>8</number>
              </property>
              <property name="topMargin">
               <number>0</number>
              </property>
              <property name="rightMargin">
-              <number>7</number>
+              <number>8</number>
              </property>
              <property name="bottomMargin">
-              <number>7</number>
+              <number>8</number>
              </property>
              <item alignment="Qt::AlignTop">
               <widget class="QFrame" name="frame">
@@ -962,6 +891,9 @@ QLabel{
                       <enum>QFrame::Raised</enum>
                      </property>
                      <layout class="QHBoxLayout" name="horizontalLayout_45">
+                      <property name="spacing">
+                       <number>0</number>
+                      </property>
                       <property name="leftMargin">
                        <number>0</number>
                       </property>
@@ -978,21 +910,18 @@ QLabel{
                        <widget class="QLabel" name="label_70">
                         <property name="minimumSize">
                          <size>
-                          <width>50</width>
-                          <height>50</height>
+                          <width>100</width>
+                          <height>100</height>
                          </size>
                         </property>
                         <property name="maximumSize">
                          <size>
-                          <width>50</width>
-                          <height>50</height>
+                          <width>100</width>
+                          <height>100</height>
                          </size>
                         </property>
                         <property name="text">
                          <string/>
-                        </property>
-                        <property name="pixmap">
-                         <pixmap resource="resources.qrc">:/images/assets/images/001-plant.png</pixmap>
                         </property>
                         <property name="scaledContents">
                          <bool>true</bool>
@@ -1345,6 +1274,9 @@ QLabel{
                       <enum>QFrame::Raised</enum>
                      </property>
                      <layout class="QHBoxLayout" name="horizontalLayout_49">
+                      <property name="spacing">
+                       <number>0</number>
+                      </property>
                       <property name="leftMargin">
                        <number>0</number>
                       </property>
@@ -1361,21 +1293,18 @@ QLabel{
                        <widget class="QLabel" name="label_75">
                         <property name="minimumSize">
                          <size>
-                          <width>50</width>
-                          <height>50</height>
+                          <width>100</width>
+                          <height>100</height>
                          </size>
                         </property>
                         <property name="maximumSize">
                          <size>
-                          <width>50</width>
-                          <height>50</height>
+                          <width>100</width>
+                          <height>100</height>
                          </size>
                         </property>
                         <property name="text">
                          <string/>
-                        </property>
-                        <property name="pixmap">
-                         <pixmap resource="resources.qrc">:/images/assets/images/001-plant.png</pixmap>
                         </property>
                         <property name="scaledContents">
                          <bool>true</bool>
@@ -1728,6 +1657,9 @@ QLabel{
                       <enum>QFrame::Raised</enum>
                      </property>
                      <layout class="QHBoxLayout" name="horizontalLayout_54">
+                      <property name="spacing">
+                       <number>0</number>
+                      </property>
                       <property name="leftMargin">
                        <number>0</number>
                       </property>
@@ -1744,21 +1676,18 @@ QLabel{
                        <widget class="QLabel" name="label_80">
                         <property name="minimumSize">
                          <size>
-                          <width>50</width>
-                          <height>50</height>
+                          <width>100</width>
+                          <height>100</height>
                          </size>
                         </property>
                         <property name="maximumSize">
                          <size>
-                          <width>50</width>
-                          <height>50</height>
+                          <width>100</width>
+                          <height>100</height>
                          </size>
                         </property>
                         <property name="text">
                          <string/>
-                        </property>
-                        <property name="pixmap">
-                         <pixmap resource="resources.qrc">:/images/assets/images/001-plant.png</pixmap>
                         </property>
                         <property name="scaledContents">
                          <bool>true</bool>
@@ -2076,17 +2005,20 @@ QLabel{
           <item>
            <widget class="QWidget" name="widget_5" native="true">
             <layout class="QVBoxLayout" name="verticalLayout_7">
+             <property name="spacing">
+              <number>8</number>
+             </property>
              <property name="leftMargin">
-              <number>7</number>
+              <number>8</number>
              </property>
              <property name="topMargin">
               <number>0</number>
              </property>
              <property name="rightMargin">
-              <number>7</number>
+              <number>8</number>
              </property>
              <property name="bottomMargin">
-              <number>7</number>
+              <number>8</number>
              </property>
              <item>
               <widget class="QFrame" name="frame_7">

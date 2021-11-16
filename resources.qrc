@@ -288,6 +288,10 @@
     <file>assets/icons/blue/zoom-out.svg</file>
   </qresource>
   <qresource prefix="figma">
+    <file>assets/icons/figma/HomePage-top-cards-icons/Battery.svg</file>
+    <file>assets/icons/figma/HomePage-top-cards-icons/Heart.svg</file>
+    <file>assets/icons/figma/HomePage-top-cards-icons/Pots.svg</file>
+    <file>assets/icons/figma/HomePage-top-cards-icons/Water.svg</file>
     <file>assets/icons/figma/like.svg</file>
     <file>assets/icons/figma/charging 2 (Traced).svg</file>
     <file>assets/icons/figma/drop 2 (Traced).svg</file>
@@ -297,6 +301,7 @@
   </qresource>
   <qresource prefix="greenIcons"/>
   <qresource prefix="images">
+    <file>assets/images/plant-image.png</file>
     <file>assets/images/heart_line.png</file>
     <file>assets/images/loupe.png</file>
     <file>assets/images/menu.png</file>
