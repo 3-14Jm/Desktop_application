@@ -297,10 +297,13 @@
     <file>assets/icons/figma/drop 2 (Traced).svg</file>
   </qresource>
   <qresource prefix="fonts">
+    <file>assets/fonts/Rubik-VariableFont_wght.ttf</file>
     <file>assets/fonts/Roboto-Black.ttf</file>
   </qresource>
   <qresource prefix="greenIcons"/>
   <qresource prefix="images">
+    <file>assets/images/photo.png</file>
+    <file>assets/images/background_image.png</file>
     <file>assets/images/plant-image.png</file>
     <file>assets/images/heart_line.png</file>
     <file>assets/images/loupe.png</file>
