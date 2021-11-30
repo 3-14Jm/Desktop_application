@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>997</width>
-    <height>670</height>
+    <width>924</width>
+    <height>541</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -36,16 +36,13 @@
 
 QLineEdit{
 	background: transparent;
+	color: #D2D2D2;
 }
 QLabel{
 	color: #36455A;
 }
 #pushButton_4, #pushButton_5, #pushButton_6, #pushButton_7{
 	color: #36455A;
-}
-#searchFrame{
-	border-radius: 10px;
-	border: 2px solid #33D799;
 }
 #card1, #card2, #card3, #card4 {
 	background-color: #fefeff;
@@ -54,59 +51,76 @@ QLabel{
 	border-radius: 3px;
 }
 #pushButton_2{
-
 	color: #33D799;
-
 }
 
-#pushButton_4{
+#pushButton_6{
 	background-color: #fefeff;
-	padding: 10px 5px;
-	text-align: left;
 	border-top-left-radius: 3px;
 	border-bottom-left-radius: 3px;
 }
-#pushButton_5, #pushButton_6, #pushButton_7{
+#pushButton_4, #pushButton_5, #pushButton_6, #pushButton_7{
 	padding: 10px 5px;
 	text-align: left;
 }
-#label_50, #label_53, #label_57, #label_55{
+#label_50, #label_53, #label_57, #label_55, #label_64, #label_72, #label_80{
 	color: #33D799;
-}
-#frame_27{
-	background-color: rgba(51, 215, 153, 0.7);
-}
-#frame_28{
-	background-color: rgba(255, 0, 0, 0.7);
-}
-#frame_31{
-	background-color: rgba(0, 0, 0, 0.2);
-}
-#frame_34{
-	background-color: rgba(255, 214, 0, 1);
-}
-#frame_34, #frame_31, #frame_28, #frame_27{
-	border-radius: 3px;
-}
-#frame_20, #frame_11, #frame_8, #frame_26{
-	background-color: rgb(255, 255, 255);
-	border: 1px solid;
-	border-color: rgba(0, 0, 0, 0.1);
-	border-radius: 3px;
-}
-#label_70, #label_75, #label_80{
-	border-image: url(:/images/assets/images/plant-image.png) 0 0 0 0 stretch stretch;
-	border-top-left-radius: 8px;
-	border-bottom-left-radius: 8px;
 }
 #right_mainBody{
 	border-image: url(:/images/assets/images/background_image.png) 0 0 0 0 stretch stretch;
 }
 #pushButton{
-	color: #36455A;
-	background-color: #fefeff;
+	color: #ffffff;
+	background-color: #2DDA93;
+	border-radius: 3px;
+}
+#frame_3{
+	border-image: url(:/images/assets/images/photo.png) 0 0 0 0 stretch stretch;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
+#frame_4{
+	background-color: rgb(255, 255, 255);
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+#frame_9{
+	background-color: rgb(255, 255, 255);
 	border: 1px solid;
-	border-color: rgb(0, 0, 0);
+	border-color: rgba(0, 0, 0, 0.1);
+	border-radius: 14px;
+}
+#label_11, #label_13, #label_15{
+	color: #495566;
+}
+#label_10, #label_12, #label_14{
+	color: #6A6F7D;
+}
+#widget_2, #frame_2{
+	border: 1px solid;
+	border-color: rgba(0, 0, 0, 0.1);
+	border-radius: 3px;
+}
+#frame_28, #frame_33, #frame_40, #frame_26, #frame_43, #frame_53{
+	background-color: rgb(255, 255, 255);
+	border: 1px solid;
+	border-color: rgba(0, 0, 0, 0.1);
+	border-radius: 3px;
+}
+
+#frame_27, #frame_52, #frame_59{
+	background-color: rgba(51, 215, 153, 0.7);
+}
+#frame_32{
+	background-color: rgba(255, 0, 0, 0.7);
+}
+#frame_39{
+	background-color: rgba(0, 0, 0, 0.2);
+}
+#frame_50{
+	background-color: rgba(255, 214, 0, 1);
+}
+#frame_27, #frame_32, #frame_39, #frame_50, #frame_52, #frame_59{
 	border-radius: 3px;
 }</string>
    </property>
@@ -408,7 +422,7 @@ QLabel{
          <property name="frameShadow">
           <enum>QFrame::Raised</enum>
          </property>
-         <layout class="QVBoxLayout" name="verticalLayout_6" stretch="0,0,0">
+         <layout class="QVBoxLayout" name="verticalLayout_6" stretch="0,0">
           <property name="spacing">
            <number>8</number>
           </property>
@@ -419,7 +433,7 @@ QLabel{
            <number>12</number>
           </property>
           <property name="rightMargin">
-           <number>0</number>
+           <number>12</number>
           </property>
           <property name="bottomMargin">
            <number>12</number>
@@ -472,399 +486,8 @@ QLabel{
                    </font>
                   </property>
                   <property name="text">
-                   <string>Home</string>
+                   <string>My Pots</string>
                   </property>
-                 </widget>
-                </item>
-               </layout>
-              </widget>
-             </item>
-            </layout>
-           </widget>
-          </item>
-          <item>
-           <widget class="QWidget" name="cardsFrame" native="true">
-            <layout class="QVBoxLayout" name="verticalLayout_15">
-             <property name="spacing">
-              <number>8</number>
-             </property>
-             <property name="leftMargin">
-              <number>0</number>
-             </property>
-             <property name="topMargin">
-              <number>0</number>
-             </property>
-             <property name="rightMargin">
-              <number>0</number>
-             </property>
-             <property name="bottomMargin">
-              <number>0</number>
-             </property>
-             <item>
-              <widget class="QFrame" name="frame_ownPots_and_likedPlants">
-               <property name="frameShape">
-                <enum>QFrame::StyledPanel</enum>
-               </property>
-               <property name="frameShadow">
-                <enum>QFrame::Raised</enum>
-               </property>
-               <layout class="QHBoxLayout" name="horizontalLayout_3">
-                <property name="spacing">
-                 <number>8</number>
-                </property>
-                <property name="leftMargin">
-                 <number>0</number>
-                </property>
-                <property name="topMargin">
-                 <number>0</number>
-                </property>
-                <property name="rightMargin">
-                 <number>0</number>
-                </property>
-                <property name="bottomMargin">
-                 <number>0</number>
-                </property>
-                <item>
-                 <widget class="QFrame" name="card2">
-                  <property name="minimumSize">
-                   <size>
-                    <width>200</width>
-                    <height>0</height>
-                   </size>
-                  </property>
-                  <property name="frameShape">
-                   <enum>QFrame::StyledPanel</enum>
-                  </property>
-                  <property name="frameShadow">
-                   <enum>QFrame::Raised</enum>
-                  </property>
-                  <layout class="QHBoxLayout" name="horizontalLayout_37">
-                   <item>
-                    <widget class="QFrame" name="frame_5">
-                     <property name="frameShape">
-                      <enum>QFrame::StyledPanel</enum>
-                     </property>
-                     <property name="frameShadow">
-                      <enum>QFrame::Raised</enum>
-                     </property>
-                     <layout class="QVBoxLayout" name="verticalLayout_5">
-                      <item>
-                       <widget class="QLabel" name="label_13">
-                        <property name="font">
-                         <font>
-                          <family>Roboto</family>
-                          <pointsize>16</pointsize>
-                          <weight>75</weight>
-                          <bold>true</bold>
-                         </font>
-                        </property>
-                        <property name="text">
-                         <string>1</string>
-                        </property>
-                       </widget>
-                      </item>
-                      <item>
-                       <widget class="QLabel" name="label_14">
-                        <property name="font">
-                         <font>
-                          <family>Roboto</family>
-                          <pointsize>12</pointsize>
-                          <weight>75</weight>
-                          <bold>true</bold>
-                         </font>
-                        </property>
-                        <property name="text">
-                         <string>Favorite plants</string>
-                        </property>
-                       </widget>
-                      </item>
-                     </layout>
-                    </widget>
-                   </item>
-                   <item>
-                    <widget class="QLabel" name="label_15">
-                     <property name="maximumSize">
-                      <size>
-                       <width>40</width>
-                       <height>40</height>
-                      </size>
-                     </property>
-                     <property name="text">
-                      <string/>
-                     </property>
-                     <property name="pixmap">
-                      <pixmap resource="resources.qrc">:/figma/assets/icons/figma/HomePage-top-cards-icons/Heart.svg</pixmap>
-                     </property>
-                     <property name="scaledContents">
-                      <bool>true</bool>
-                     </property>
-                    </widget>
-                   </item>
-                  </layout>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QFrame" name="card1">
-                  <property name="minimumSize">
-                   <size>
-                    <width>200</width>
-                    <height>0</height>
-                   </size>
-                  </property>
-                  <property name="frameShape">
-                   <enum>QFrame::StyledPanel</enum>
-                  </property>
-                  <property name="frameShadow">
-                   <enum>QFrame::Raised</enum>
-                  </property>
-                  <layout class="QHBoxLayout" name="horizontalLayout_36">
-                   <item>
-                    <widget class="QFrame" name="frame_6">
-                     <property name="frameShape">
-                      <enum>QFrame::StyledPanel</enum>
-                     </property>
-                     <property name="frameShadow">
-                      <enum>QFrame::Raised</enum>
-                     </property>
-                     <layout class="QVBoxLayout" name="verticalLayout_17">
-                      <item>
-                       <widget class="QLabel" name="label_16">
-                        <property name="font">
-                         <font>
-                          <family>Roboto</family>
-                          <pointsize>16</pointsize>
-                          <weight>75</weight>
-                          <bold>true</bold>
-                         </font>
-                        </property>
-                        <property name="text">
-                         <string>1</string>
-                        </property>
-                       </widget>
-                      </item>
-                      <item>
-                       <widget class="QLabel" name="label_17">
-                        <property name="font">
-                         <font>
-                          <family>Roboto</family>
-                          <pointsize>12</pointsize>
-                          <weight>75</weight>
-                          <bold>true</bold>
-                         </font>
-                        </property>
-                        <property name="text">
-                         <string>Favorite plants</string>
-                        </property>
-                       </widget>
-                      </item>
-                     </layout>
-                    </widget>
-                   </item>
-                   <item>
-                    <widget class="QLabel" name="label_18">
-                     <property name="maximumSize">
-                      <size>
-                       <width>40</width>
-                       <height>40</height>
-                      </size>
-                     </property>
-                     <property name="text">
-                      <string/>
-                     </property>
-                     <property name="pixmap">
-                      <pixmap resource="resources.qrc">:/figma/assets/icons/figma/HomePage-top-cards-icons/Pots.svg</pixmap>
-                     </property>
-                     <property name="scaledContents">
-                      <bool>true</bool>
-                     </property>
-                    </widget>
-                   </item>
-                  </layout>
-                 </widget>
-                </item>
-               </layout>
-              </widget>
-             </item>
-             <item>
-              <widget class="QFrame" name="frame_needWater_and_needEnergy">
-               <property name="frameShape">
-                <enum>QFrame::StyledPanel</enum>
-               </property>
-               <property name="frameShadow">
-                <enum>QFrame::Raised</enum>
-               </property>
-               <layout class="QHBoxLayout" name="horizontalLayout_4">
-                <property name="spacing">
-                 <number>8</number>
-                </property>
-                <property name="leftMargin">
-                 <number>0</number>
-                </property>
-                <property name="topMargin">
-                 <number>0</number>
-                </property>
-                <property name="rightMargin">
-                 <number>0</number>
-                </property>
-                <property name="bottomMargin">
-                 <number>0</number>
-                </property>
-                <item>
-                 <widget class="QFrame" name="card3">
-                  <property name="minimumSize">
-                   <size>
-                    <width>200</width>
-                    <height>0</height>
-                   </size>
-                  </property>
-                  <property name="frameShape">
-                   <enum>QFrame::StyledPanel</enum>
-                  </property>
-                  <property name="frameShadow">
-                   <enum>QFrame::Raised</enum>
-                  </property>
-                  <layout class="QHBoxLayout" name="horizontalLayout_40">
-                   <item>
-                    <widget class="QFrame" name="frame_4">
-                     <property name="frameShape">
-                      <enum>QFrame::StyledPanel</enum>
-                     </property>
-                     <property name="frameShadow">
-                      <enum>QFrame::Raised</enum>
-                     </property>
-                     <layout class="QVBoxLayout" name="verticalLayout_4">
-                      <item>
-                       <widget class="QLabel" name="label_10">
-                        <property name="font">
-                         <font>
-                          <family>Roboto</family>
-                          <pointsize>16</pointsize>
-                          <weight>75</weight>
-                          <bold>true</bold>
-                         </font>
-                        </property>
-                        <property name="text">
-                         <string>1</string>
-                        </property>
-                       </widget>
-                      </item>
-                      <item>
-                       <widget class="QLabel" name="label_11">
-                        <property name="font">
-                         <font>
-                          <family>Roboto</family>
-                          <pointsize>12</pointsize>
-                          <weight>75</weight>
-                          <bold>true</bold>
-                         </font>
-                        </property>
-                        <property name="text">
-                         <string>Favorite plants</string>
-                        </property>
-                       </widget>
-                      </item>
-                     </layout>
-                    </widget>
-                   </item>
-                   <item>
-                    <widget class="QLabel" name="label_12">
-                     <property name="maximumSize">
-                      <size>
-                       <width>40</width>
-                       <height>40</height>
-                      </size>
-                     </property>
-                     <property name="text">
-                      <string/>
-                     </property>
-                     <property name="pixmap">
-                      <pixmap resource="resources.qrc">:/figma/assets/icons/figma/HomePage-top-cards-icons/Water.svg</pixmap>
-                     </property>
-                     <property name="scaledContents">
-                      <bool>true</bool>
-                     </property>
-                    </widget>
-                   </item>
-                  </layout>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QFrame" name="card4">
-                  <property name="minimumSize">
-                   <size>
-                    <width>200</width>
-                    <height>0</height>
-                   </size>
-                  </property>
-                  <property name="frameShape">
-                   <enum>QFrame::StyledPanel</enum>
-                  </property>
-                  <property name="frameShadow">
-                   <enum>QFrame::Raised</enum>
-                  </property>
-                  <layout class="QHBoxLayout" name="horizontalLayout_39">
-                   <item>
-                    <widget class="QFrame" name="frame_3">
-                     <property name="frameShape">
-                      <enum>QFrame::StyledPanel</enum>
-                     </property>
-                     <property name="frameShadow">
-                      <enum>QFrame::Raised</enum>
-                     </property>
-                     <layout class="QVBoxLayout" name="verticalLayout_3">
-                      <item>
-                       <widget class="QLabel" name="label_7">
-                        <property name="font">
-                         <font>
-                          <family>Roboto</family>
-                          <pointsize>16</pointsize>
-                          <weight>75</weight>
-                          <bold>true</bold>
-                         </font>
-                        </property>
-                        <property name="text">
-                         <string>1</string>
-                        </property>
-                       </widget>
-                      </item>
-                      <item>
-                       <widget class="QLabel" name="label_8">
-                        <property name="font">
-                         <font>
-                          <family>Roboto</family>
-                          <pointsize>12</pointsize>
-                          <weight>75</weight>
-                          <bold>true</bold>
-                         </font>
-                        </property>
-                        <property name="text">
-                         <string>Favorite plants</string>
-                        </property>
-                       </widget>
-                      </item>
-                     </layout>
-                    </widget>
-                   </item>
-                   <item>
-                    <widget class="QLabel" name="label_9">
-                     <property name="maximumSize">
-                      <size>
-                       <width>40</width>
-                       <height>40</height>
-                      </size>
-                     </property>
-                     <property name="text">
-                      <string/>
-                     </property>
-                     <property name="pixmap">
-                      <pixmap resource="resources.qrc">:/figma/assets/icons/figma/HomePage-top-cards-icons/Battery.svg</pixmap>
-                     </property>
-                     <property name="scaledContents">
-                      <bool>true</bool>
-                     </property>
-                    </widget>
-                   </item>
-                  </layout>
                  </widget>
                 </item>
                </layout>
@@ -913,49 +536,206 @@ QLabel{
                  <number>8</number>
                 </property>
                 <item>
-                 <widget class="QFrame" name="frame_7">
+                 <widget class="QFrame" name="frame">
                   <property name="frameShape">
                    <enum>QFrame::StyledPanel</enum>
                   </property>
                   <property name="frameShadow">
                    <enum>QFrame::Raised</enum>
                   </property>
-                  <layout class="QHBoxLayout" name="horizontalLayout_16">
+                  <layout class="QHBoxLayout" name="horizontalLayout_3">
+                   <property name="leftMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="topMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="rightMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="bottomMargin">
+                    <number>0</number>
+                   </property>
                    <item>
-                    <widget class="QLabel" name="label_29">
-                     <property name="font">
-                      <font>
-                       <family>Roboto</family>
-                       <pointsize>12</pointsize>
-                       <weight>75</weight>
-                       <bold>true</bold>
-                      </font>
+                    <widget class="QFrame" name="card1">
+                     <property name="minimumSize">
+                      <size>
+                       <width>200</width>
+                       <height>0</height>
+                      </size>
                      </property>
-                     <property name="text">
-                      <string>Latest watched flower pots</string>
+                     <property name="frameShape">
+                      <enum>QFrame::StyledPanel</enum>
                      </property>
+                     <property name="frameShadow">
+                      <enum>QFrame::Raised</enum>
+                     </property>
+                     <layout class="QHBoxLayout" name="horizontalLayout_49">
+                      <item>
+                       <widget class="QFrame" name="frame_63">
+                        <property name="frameShape">
+                         <enum>QFrame::StyledPanel</enum>
+                        </property>
+                        <property name="frameShadow">
+                         <enum>QFrame::Raised</enum>
+                        </property>
+                        <layout class="QVBoxLayout" name="verticalLayout_24">
+                         <item>
+                          <widget class="QLabel" name="label_24">
+                           <property name="font">
+                            <font>
+                             <family>Roboto</family>
+                             <pointsize>16</pointsize>
+                             <weight>75</weight>
+                             <bold>true</bold>
+                            </font>
+                           </property>
+                           <property name="text">
+                            <string>1</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QLabel" name="label_25">
+                           <property name="font">
+                            <font>
+                             <family>Roboto</family>
+                             <pointsize>12</pointsize>
+                             <weight>75</weight>
+                             <bold>true</bold>
+                            </font>
+                           </property>
+                           <property name="text">
+                            <string>Need water!</string>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QLabel" name="label_26">
+                        <property name="maximumSize">
+                         <size>
+                          <width>50</width>
+                          <height>50</height>
+                         </size>
+                        </property>
+                        <property name="text">
+                         <string/>
+                        </property>
+                        <property name="pixmap">
+                         <pixmap resource="resources.qrc">:/figma/assets/icons/figma/HomePage-top-cards-icons/Water.svg</pixmap>
+                        </property>
+                        <property name="scaledContents">
+                         <bool>true</bool>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
                     </widget>
                    </item>
-                   <item alignment="Qt::AlignRight">
-                    <widget class="QPushButton" name="pushButton_2">
-                     <property name="font">
-                      <font>
-                       <family>Roboto Medium</family>
-                       <pointsize>9</pointsize>
-                      </font>
+                   <item>
+                    <widget class="QFrame" name="card2">
+                     <property name="minimumSize">
+                      <size>
+                       <width>200</width>
+                       <height>0</height>
+                      </size>
                      </property>
-                     <property name="text">
-                      <string>View more</string>
+                     <property name="frameShape">
+                      <enum>QFrame::StyledPanel</enum>
                      </property>
+                     <property name="frameShadow">
+                      <enum>QFrame::Raised</enum>
+                     </property>
+                     <layout class="QHBoxLayout" name="horizontalLayout_50">
+                      <item>
+                       <widget class="QFrame" name="frame_64">
+                        <property name="frameShape">
+                         <enum>QFrame::StyledPanel</enum>
+                        </property>
+                        <property name="frameShadow">
+                         <enum>QFrame::Raised</enum>
+                        </property>
+                        <layout class="QVBoxLayout" name="verticalLayout_25">
+                         <item>
+                          <widget class="QLabel" name="label_27">
+                           <property name="font">
+                            <font>
+                             <family>Roboto</family>
+                             <pointsize>16</pointsize>
+                             <weight>75</weight>
+                             <bold>true</bold>
+                            </font>
+                           </property>
+                           <property name="text">
+                            <string>1</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QLabel" name="label_81">
+                           <property name="font">
+                            <font>
+                             <family>Roboto</family>
+                             <pointsize>12</pointsize>
+                             <weight>75</weight>
+                             <bold>true</bold>
+                            </font>
+                           </property>
+                           <property name="text">
+                            <string>Battery is low!</string>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QLabel" name="label_82">
+                        <property name="maximumSize">
+                         <size>
+                          <width>50</width>
+                          <height>50</height>
+                         </size>
+                        </property>
+                        <property name="text">
+                         <string/>
+                        </property>
+                        <property name="pixmap">
+                         <pixmap resource="resources.qrc">:/figma/assets/icons/figma/HomePage-top-cards-icons/Battery.svg</pixmap>
+                        </property>
+                        <property name="scaledContents">
+                         <bool>true</bool>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
                     </widget>
                    </item>
                   </layout>
                  </widget>
                 </item>
                 <item>
+                 <widget class="QLabel" name="label_62">
+                  <property name="font">
+                   <font>
+                    <family>Roboto</family>
+                    <pointsize>12</pointsize>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Your Pots</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
                  <widget class="QFrame" name="frame_26">
                   <property name="sizePolicy">
-                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
                     <horstretch>0</horstretch>
                     <verstretch>0</verstretch>
                    </sizepolicy>
@@ -992,7 +772,7 @@ QLabel{
                     <number>0</number>
                    </property>
                    <item>
-                    <widget class="QFrame" name="frame_9">
+                    <widget class="QFrame" name="frame_11">
                      <property name="frameShape">
                       <enum>QFrame::StyledPanel</enum>
                      </property>
@@ -1026,14 +806,14 @@ QLabel{
                        </widget>
                       </item>
                       <item>
-                       <widget class="QFrame" name="frame_16">
+                       <widget class="QFrame" name="frame_20">
                         <property name="frameShape">
                          <enum>QFrame::StyledPanel</enum>
                         </property>
                         <property name="frameShadow">
                          <enum>QFrame::Raised</enum>
                         </property>
-                        <layout class="QVBoxLayout" name="verticalLayout_11">
+                        <layout class="QVBoxLayout" name="verticalLayout_14">
                          <property name="spacing">
                           <number>0</number>
                          </property>
@@ -1064,7 +844,7 @@ QLabel{
                           </widget>
                          </item>
                          <item>
-                          <widget class="QFrame" name="frame_17">
+                          <widget class="QFrame" name="frame_21">
                            <property name="frameShape">
                             <enum>QFrame::StyledPanel</enum>
                            </property>
@@ -1091,8 +871,8 @@ QLabel{
                              <widget class="QLabel" name="label_51">
                               <property name="maximumSize">
                                <size>
-                                <width>20</width>
-                                <height>20</height>
+                                <width>15</width>
+                                <height>15</height>
                                </size>
                               </property>
                               <property name="text">
@@ -1293,14 +1073,29 @@ QLabel{
                  </widget>
                 </item>
                 <item>
-                 <widget class="QFrame" name="frame_8">
+                 <widget class="QFrame" name="frame_28">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="minimumSize">
+                   <size>
+                    <width>410</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="layoutDirection">
+                   <enum>Qt::LeftToRight</enum>
+                  </property>
                   <property name="frameShape">
                    <enum>QFrame::StyledPanel</enum>
                   </property>
                   <property name="frameShadow">
                    <enum>QFrame::Raised</enum>
                   </property>
-                  <layout class="QHBoxLayout" name="horizontalLayout_7">
+                  <layout class="QHBoxLayout" name="horizontalLayout_14">
                    <property name="spacing">
                     <number>0</number>
                    </property>
@@ -1317,13 +1112,7 @@ QLabel{
                     <number>0</number>
                    </property>
                    <item>
-                    <widget class="QFrame" name="frame_10">
-                     <property name="sizePolicy">
-                      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                       <horstretch>0</horstretch>
-                       <verstretch>0</verstretch>
-                      </sizepolicy>
-                     </property>
+                    <widget class="QFrame" name="frame_22">
                      <property name="frameShape">
                       <enum>QFrame::StyledPanel</enum>
                      </property>
@@ -1357,14 +1146,14 @@ QLabel{
                        </widget>
                       </item>
                       <item>
-                       <widget class="QFrame" name="frame_18">
+                       <widget class="QFrame" name="frame_23">
                         <property name="frameShape">
                          <enum>QFrame::StyledPanel</enum>
                         </property>
                         <property name="frameShadow">
                          <enum>QFrame::Raised</enum>
                         </property>
-                        <layout class="QVBoxLayout" name="verticalLayout_12">
+                        <layout class="QVBoxLayout" name="verticalLayout_15">
                          <property name="spacing">
                           <number>0</number>
                          </property>
@@ -1390,12 +1179,12 @@ QLabel{
                             </font>
                            </property>
                            <property name="text">
-                            <string>Circle Cactus</string>
+                            <string>Red Cactus</string>
                            </property>
                           </widget>
                          </item>
                          <item>
-                          <widget class="QFrame" name="frame_19">
+                          <widget class="QFrame" name="frame_29">
                            <property name="frameShape">
                             <enum>QFrame::StyledPanel</enum>
                            </property>
@@ -1422,8 +1211,8 @@ QLabel{
                              <widget class="QLabel" name="label_52">
                               <property name="maximumSize">
                                <size>
-                                <width>20</width>
-                                <height>20</height>
+                                <width>15</width>
+                                <height>15</height>
                                </size>
                               </property>
                               <property name="text">
@@ -1440,7 +1229,7 @@ QLabel{
                             <item alignment="Qt::AlignLeft">
                              <widget class="QLabel" name="label_53">
                               <property name="text">
-                               <string>Bedroom</string>
+                               <string>Kitchen</string>
                               </property>
                               <property name="scaledContents">
                                <bool>true</bool>
@@ -1454,14 +1243,14 @@ QLabel{
                        </widget>
                       </item>
                       <item>
-                       <widget class="QFrame" name="frame_29">
+                       <widget class="QFrame" name="frame_30">
                         <property name="frameShape">
                          <enum>QFrame::StyledPanel</enum>
                         </property>
                         <property name="frameShadow">
                          <enum>QFrame::Raised</enum>
                         </property>
-                        <layout class="QHBoxLayout" name="horizontalLayout_19">
+                        <layout class="QHBoxLayout" name="horizontalLayout_16">
                          <property name="spacing">
                           <number>6</number>
                          </property>
@@ -1509,7 +1298,7 @@ QLabel{
                           </widget>
                          </item>
                          <item>
-                          <widget class="QLabel" name="label_31">
+                          <widget class="QLabel" name="label_29">
                            <property name="font">
                             <font>
                              <family>Roboto Medium</family>
@@ -1517,7 +1306,7 @@ QLabel{
                             </font>
                            </property>
                            <property name="text">
-                            <string>20%</string>
+                            <string>60%</string>
                            </property>
                           </widget>
                          </item>
@@ -1525,14 +1314,14 @@ QLabel{
                        </widget>
                       </item>
                       <item>
-                       <widget class="QFrame" name="frame_30">
+                       <widget class="QFrame" name="frame_31">
                         <property name="frameShape">
                          <enum>QFrame::StyledPanel</enum>
                         </property>
                         <property name="frameShadow">
                          <enum>QFrame::Raised</enum>
                         </property>
-                        <layout class="QHBoxLayout" name="horizontalLayout_28">
+                        <layout class="QHBoxLayout" name="horizontalLayout_27">
                          <property name="spacing">
                           <number>6</number>
                          </property>
@@ -1574,7 +1363,7 @@ QLabel{
                           </widget>
                          </item>
                          <item>
-                          <widget class="QLabel" name="label_32">
+                          <widget class="QLabel" name="label_31">
                            <property name="font">
                             <font>
                              <family>Roboto Medium</family>
@@ -1582,7 +1371,7 @@ QLabel{
                             </font>
                            </property>
                            <property name="text">
-                            <string>15%</string>
+                            <string>75%</string>
                            </property>
                           </widget>
                          </item>
@@ -1593,7 +1382,13 @@ QLabel{
                     </widget>
                    </item>
                    <item>
-                    <widget class="QFrame" name="frame_28">
+                    <widget class="QFrame" name="frame_32">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Preferred" vsizetype="Ignored">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
                      <property name="minimumSize">
                       <size>
                        <width>6</width>
@@ -1618,14 +1413,29 @@ QLabel{
                  </widget>
                 </item>
                 <item>
-                 <widget class="QFrame" name="frame_11">
+                 <widget class="QFrame" name="frame_33">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="minimumSize">
+                   <size>
+                    <width>410</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="layoutDirection">
+                   <enum>Qt::LeftToRight</enum>
+                  </property>
                   <property name="frameShape">
                    <enum>QFrame::StyledPanel</enum>
                   </property>
                   <property name="frameShadow">
                    <enum>QFrame::Raised</enum>
                   </property>
-                  <layout class="QHBoxLayout" name="horizontalLayout_14">
+                  <layout class="QHBoxLayout" name="horizontalLayout_19">
                    <property name="spacing">
                     <number>0</number>
                    </property>
@@ -1642,7 +1452,7 @@ QLabel{
                     <number>0</number>
                    </property>
                    <item>
-                    <widget class="QFrame" name="frame_21">
+                    <widget class="QFrame" name="frame_34">
                      <property name="frameShape">
                       <enum>QFrame::StyledPanel</enum>
                      </property>
@@ -1676,14 +1486,14 @@ QLabel{
                        </widget>
                       </item>
                       <item>
-                       <widget class="QFrame" name="frame_22">
+                       <widget class="QFrame" name="frame_35">
                         <property name="frameShape">
                          <enum>QFrame::StyledPanel</enum>
                         </property>
                         <property name="frameShadow">
                          <enum>QFrame::Raised</enum>
                         </property>
-                        <layout class="QVBoxLayout" name="verticalLayout_13">
+                        <layout class="QVBoxLayout" name="verticalLayout_18">
                          <property name="spacing">
                           <number>0</number>
                          </property>
@@ -1709,12 +1519,12 @@ QLabel{
                             </font>
                            </property>
                            <property name="text">
-                            <string>Empty Pot</string>
+                            <string>Red Cactus</string>
                            </property>
                           </widget>
                          </item>
                          <item>
-                          <widget class="QFrame" name="frame_23">
+                          <widget class="QFrame" name="frame_36">
                            <property name="frameShape">
                             <enum>QFrame::StyledPanel</enum>
                            </property>
@@ -1741,8 +1551,8 @@ QLabel{
                              <widget class="QLabel" name="label_54">
                               <property name="maximumSize">
                                <size>
-                                <width>20</width>
-                                <height>20</height>
+                                <width>15</width>
+                                <height>15</height>
                                </size>
                               </property>
                               <property name="text">
@@ -1759,7 +1569,7 @@ QLabel{
                             <item alignment="Qt::AlignLeft">
                              <widget class="QLabel" name="label_55">
                               <property name="text">
-                               <string>Add location</string>
+                               <string>Kitchen</string>
                               </property>
                               <property name="scaledContents">
                                <bool>true</bool>
@@ -1773,14 +1583,14 @@ QLabel{
                        </widget>
                       </item>
                       <item>
-                       <widget class="QFrame" name="frame_32">
+                       <widget class="QFrame" name="frame_37">
                         <property name="frameShape">
                          <enum>QFrame::StyledPanel</enum>
                         </property>
                         <property name="frameShadow">
                          <enum>QFrame::Raised</enum>
                         </property>
-                        <layout class="QHBoxLayout" name="horizontalLayout_29">
+                        <layout class="QHBoxLayout" name="horizontalLayout_28">
                          <property name="spacing">
                           <number>6</number>
                          </property>
@@ -1828,7 +1638,7 @@ QLabel{
                           </widget>
                          </item>
                          <item>
-                          <widget class="QLabel" name="label_33">
+                          <widget class="QLabel" name="label_32">
                            <property name="font">
                             <font>
                              <family>Roboto Medium</family>
@@ -1836,7 +1646,7 @@ QLabel{
                             </font>
                            </property>
                            <property name="text">
-                            <string>32%</string>
+                            <string>60%</string>
                            </property>
                           </widget>
                          </item>
@@ -1844,14 +1654,14 @@ QLabel{
                        </widget>
                       </item>
                       <item>
-                       <widget class="QFrame" name="frame_33">
+                       <widget class="QFrame" name="frame_38">
                         <property name="frameShape">
                          <enum>QFrame::StyledPanel</enum>
                         </property>
                         <property name="frameShadow">
                          <enum>QFrame::Raised</enum>
                         </property>
-                        <layout class="QHBoxLayout" name="horizontalLayout_30">
+                        <layout class="QHBoxLayout" name="horizontalLayout_29">
                          <property name="spacing">
                           <number>6</number>
                          </property>
@@ -1893,7 +1703,7 @@ QLabel{
                           </widget>
                          </item>
                          <item>
-                          <widget class="QLabel" name="label_46">
+                          <widget class="QLabel" name="label_33">
                            <property name="font">
                             <font>
                              <family>Roboto Medium</family>
@@ -1901,7 +1711,7 @@ QLabel{
                             </font>
                            </property>
                            <property name="text">
-                            <string>?</string>
+                            <string>75%</string>
                            </property>
                           </widget>
                          </item>
@@ -1912,7 +1722,13 @@ QLabel{
                     </widget>
                    </item>
                    <item>
-                    <widget class="QFrame" name="frame_31">
+                    <widget class="QFrame" name="frame_39">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Preferred" vsizetype="Ignored">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
                      <property name="minimumSize">
                       <size>
                        <width>6</width>
@@ -1937,14 +1753,29 @@ QLabel{
                  </widget>
                 </item>
                 <item>
-                 <widget class="QFrame" name="frame_20">
+                 <widget class="QFrame" name="frame_40">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="minimumSize">
+                   <size>
+                    <width>410</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="layoutDirection">
+                   <enum>Qt::LeftToRight</enum>
+                  </property>
                   <property name="frameShape">
                    <enum>QFrame::StyledPanel</enum>
                   </property>
                   <property name="frameShadow">
                    <enum>QFrame::Raised</enum>
                   </property>
-                  <layout class="QHBoxLayout" name="horizontalLayout_27">
+                  <layout class="QHBoxLayout" name="horizontalLayout_30">
                    <property name="spacing">
                     <number>0</number>
                    </property>
@@ -1961,7 +1792,7 @@ QLabel{
                     <number>0</number>
                    </property>
                    <item>
-                    <widget class="QFrame" name="frame_35">
+                    <widget class="QFrame" name="frame_41">
                      <property name="frameShape">
                       <enum>QFrame::StyledPanel</enum>
                      </property>
@@ -1970,7 +1801,7 @@ QLabel{
                      </property>
                      <layout class="QHBoxLayout" name="horizontalLayout_31">
                       <item>
-                       <widget class="QLabel" name="label_47">
+                       <widget class="QLabel" name="label_46">
                         <property name="minimumSize">
                          <size>
                           <width>40</width>
@@ -1995,14 +1826,14 @@ QLabel{
                        </widget>
                       </item>
                       <item>
-                       <widget class="QFrame" name="frame_36">
+                       <widget class="QFrame" name="frame_42">
                         <property name="frameShape">
                          <enum>QFrame::StyledPanel</enum>
                         </property>
                         <property name="frameShadow">
                          <enum>QFrame::Raised</enum>
                         </property>
-                        <layout class="QVBoxLayout" name="verticalLayout_14">
+                        <layout class="QVBoxLayout" name="verticalLayout_19">
                          <property name="spacing">
                           <number>0</number>
                          </property>
@@ -2019,7 +1850,7 @@ QLabel{
                           <number>0</number>
                          </property>
                          <item>
-                          <widget class="QLabel" name="label_48">
+                          <widget class="QLabel" name="label_47">
                            <property name="font">
                             <font>
                              <family>Roboto</family>
@@ -2028,12 +1859,12 @@ QLabel{
                             </font>
                            </property>
                            <property name="text">
-                            <string>Circle Cactus</string>
+                            <string>Red Cactus</string>
                            </property>
                           </widget>
                          </item>
                          <item>
-                          <widget class="QFrame" name="frame_37">
+                          <widget class="QFrame" name="frame_47">
                            <property name="frameShape">
                             <enum>QFrame::StyledPanel</enum>
                            </property>
@@ -2060,8 +1891,8 @@ QLabel{
                              <widget class="QLabel" name="label_56">
                               <property name="maximumSize">
                                <size>
-                                <width>20</width>
-                                <height>20</height>
+                                <width>15</width>
+                                <height>15</height>
                                </size>
                               </property>
                               <property name="text">
@@ -2092,7 +1923,7 @@ QLabel{
                        </widget>
                       </item>
                       <item>
-                       <widget class="QFrame" name="frame_38">
+                       <widget class="QFrame" name="frame_48">
                         <property name="frameShape">
                          <enum>QFrame::StyledPanel</enum>
                         </property>
@@ -2116,7 +1947,7 @@ QLabel{
                           <number>0</number>
                          </property>
                          <item>
-                          <widget class="QLabel" name="label_58">
+                          <widget class="QLabel" name="label_48">
                            <property name="sizePolicy">
                             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                              <horstretch>0</horstretch>
@@ -2147,7 +1978,7 @@ QLabel{
                           </widget>
                          </item>
                          <item>
-                          <widget class="QLabel" name="label_59">
+                          <widget class="QLabel" name="label_58">
                            <property name="font">
                             <font>
                              <family>Roboto Medium</family>
@@ -2155,7 +1986,7 @@ QLabel{
                             </font>
                            </property>
                            <property name="text">
-                            <string>20%</string>
+                            <string>60%</string>
                            </property>
                           </widget>
                          </item>
@@ -2163,7 +1994,7 @@ QLabel{
                        </widget>
                       </item>
                       <item>
-                       <widget class="QFrame" name="frame_39">
+                       <widget class="QFrame" name="frame_49">
                         <property name="frameShape">
                          <enum>QFrame::StyledPanel</enum>
                         </property>
@@ -2187,7 +2018,7 @@ QLabel{
                           <number>0</number>
                          </property>
                          <item>
-                          <widget class="QLabel" name="label_60">
+                          <widget class="QLabel" name="label_59">
                            <property name="minimumSize">
                             <size>
                              <width>25</width>
@@ -2212,7 +2043,7 @@ QLabel{
                           </widget>
                          </item>
                          <item>
-                          <widget class="QLabel" name="label_61">
+                          <widget class="QLabel" name="label_60">
                            <property name="font">
                             <font>
                              <family>Roboto Medium</family>
@@ -2220,7 +2051,7 @@ QLabel{
                             </font>
                            </property>
                            <property name="text">
-                            <string>45%</string>
+                            <string>75%</string>
                            </property>
                           </widget>
                          </item>
@@ -2231,9 +2062,9 @@ QLabel{
                     </widget>
                    </item>
                    <item>
-                    <widget class="QFrame" name="frame_34">
+                    <widget class="QFrame" name="frame_50">
                      <property name="sizePolicy">
-                      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                      <sizepolicy hsizetype="Preferred" vsizetype="Ignored">
                        <horstretch>0</horstretch>
                        <verstretch>0</verstretch>
                       </sizepolicy>
@@ -2277,124 +2108,664 @@ QLabel{
                </layout>
               </widget>
              </item>
-            </layout>
-           </widget>
-          </item>
-         </layout>
-        </widget>
-       </item>
-       <item>
-        <widget class="QFrame" name="right_mainBody">
-         <property name="minimumSize">
-          <size>
-           <width>0</width>
-           <height>0</height>
-          </size>
-         </property>
-         <property name="frameShape">
-          <enum>QFrame::StyledPanel</enum>
-         </property>
-         <property name="frameShadow">
-          <enum>QFrame::Raised</enum>
-         </property>
-         <layout class="QVBoxLayout" name="verticalLayout">
-          <property name="spacing">
-           <number>8</number>
-          </property>
-          <property name="leftMargin">
-           <number>0</number>
-          </property>
-          <property name="topMargin">
-           <number>0</number>
-          </property>
-          <property name="rightMargin">
-           <number>0</number>
-          </property>
-          <property name="bottomMargin">
-           <number>0</number>
-          </property>
-          <item alignment="Qt::AlignTop">
-           <widget class="QFrame" name="frame">
-            <property name="frameShape">
-             <enum>QFrame::StyledPanel</enum>
-            </property>
-            <property name="frameShadow">
-             <enum>QFrame::Raised</enum>
-            </property>
-            <layout class="QVBoxLayout" name="verticalLayout_16">
-             <property name="spacing">
-              <number>16</number>
-             </property>
-             <property name="leftMargin">
-              <number>40</number>
-             </property>
              <item>
-              <widget class="QLabel" name="label">
-               <property name="font">
-                <font>
-                 <family>Rubik Light</family>
-                 <pointsize>40</pointsize>
-                </font>
-               </property>
-               <property name="text">
-                <string>iPots</string>
-               </property>
-              </widget>
-             </item>
-             <item alignment="Qt::AlignTop">
-              <widget class="QLabel" name="label_2">
-               <property name="font">
-                <font>
-                 <family>Rubik Light</family>
-                 <pointsize>16</pointsize>
-                 <weight>75</weight>
-                 <bold>true</bold>
-                </font>
-               </property>
-               <property name="text">
-                <string>We care about your plants</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <spacer name="verticalSpacer">
-               <property name="orientation">
-                <enum>Qt::Vertical</enum>
-               </property>
-               <property name="sizeType">
-                <enum>QSizePolicy::Preferred</enum>
-               </property>
-               <property name="sizeHint" stdset="0">
-                <size>
-                 <width>20</width>
-                 <height>40</height>
-                </size>
-               </property>
-              </spacer>
-             </item>
-             <item>
-              <widget class="QPushButton" name="pushButton">
-               <property name="minimumSize">
-                <size>
-                 <width>0</width>
-                 <height>20</height>
-                </size>
-               </property>
-               <property name="maximumSize">
-                <size>
-                 <width>160</width>
-                 <height>50</height>
-                </size>
-               </property>
-               <property name="font">
-                <font>
-                 <family>Roboto</family>
-                 <pointsize>10</pointsize>
-                </font>
-               </property>
-               <property name="text">
-                <string>See the latest catalog</string>
-               </property>
+              <widget class="QWidget" name="widget_2" native="true">
+               <layout class="QVBoxLayout" name="verticalLayout">
+                <property name="spacing">
+                 <number>0</number>
+                </property>
+                <property name="leftMargin">
+                 <number>1</number>
+                </property>
+                <property name="topMargin">
+                 <number>1</number>
+                </property>
+                <property name="rightMargin">
+                 <number>1</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>1</number>
+                </property>
+                <item>
+                 <widget class="QFrame" name="frame_3">
+                  <property name="frameShape">
+                   <enum>QFrame::StyledPanel</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                  <layout class="QHBoxLayout" name="horizontalLayout_11">
+                   <property name="leftMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="topMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="rightMargin">
+                    <number>6</number>
+                   </property>
+                   <property name="bottomMargin">
+                    <number>6</number>
+                   </property>
+                   <item alignment="Qt::AlignRight|Qt::AlignBottom">
+                    <widget class="QFrame" name="frame_9">
+                     <property name="minimumSize">
+                      <size>
+                       <width>28</width>
+                       <height>28</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>28</width>
+                       <height>28</height>
+                      </size>
+                     </property>
+                     <property name="frameShape">
+                      <enum>QFrame::StyledPanel</enum>
+                     </property>
+                     <property name="frameShadow">
+                      <enum>QFrame::Raised</enum>
+                     </property>
+                     <layout class="QHBoxLayout" name="horizontalLayout_12">
+                      <property name="spacing">
+                       <number>0</number>
+                      </property>
+                      <property name="leftMargin">
+                       <number>4</number>
+                      </property>
+                      <property name="topMargin">
+                       <number>4</number>
+                      </property>
+                      <property name="rightMargin">
+                       <number>4</number>
+                      </property>
+                      <property name="bottomMargin">
+                       <number>4</number>
+                      </property>
+                      <item>
+                       <widget class="QLabel" name="label_5">
+                        <property name="minimumSize">
+                         <size>
+                          <width>14</width>
+                          <height>14</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>14</width>
+                          <height>14</height>
+                         </size>
+                        </property>
+                        <property name="text">
+                         <string/>
+                        </property>
+                        <property name="pixmap">
+                         <pixmap resource="resources.qrc">:/figma/assets/icons/figma/HomePage-top-cards-icons/Heart.svg</pixmap>
+                        </property>
+                        <property name="scaledContents">
+                         <bool>true</bool>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QFrame" name="frame_4">
+                  <property name="frameShape">
+                   <enum>QFrame::StyledPanel</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                  <layout class="QVBoxLayout" name="verticalLayout_2">
+                   <property name="leftMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="topMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="rightMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="bottomMargin">
+                    <number>0</number>
+                   </property>
+                   <item>
+                    <widget class="QFrame" name="frame_5">
+                     <property name="frameShape">
+                      <enum>QFrame::StyledPanel</enum>
+                     </property>
+                     <property name="frameShadow">
+                      <enum>QFrame::Raised</enum>
+                     </property>
+                     <layout class="QVBoxLayout" name="verticalLayout_3">
+                      <property name="leftMargin">
+                       <number>12</number>
+                      </property>
+                      <property name="topMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="rightMargin">
+                       <number>12</number>
+                      </property>
+                      <property name="bottomMargin">
+                       <number>12</number>
+                      </property>
+                      <item>
+                       <widget class="QFrame" name="frame_7">
+                        <property name="frameShape">
+                         <enum>QFrame::StyledPanel</enum>
+                        </property>
+                        <property name="frameShadow">
+                         <enum>QFrame::Raised</enum>
+                        </property>
+                        <layout class="QVBoxLayout" name="verticalLayout_12">
+                         <property name="topMargin">
+                          <number>0</number>
+                         </property>
+                         <property name="bottomMargin">
+                          <number>0</number>
+                         </property>
+                        </layout>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QFrame" name="frame_61">
+                        <property name="frameShape">
+                         <enum>QFrame::StyledPanel</enum>
+                        </property>
+                        <property name="frameShadow">
+                         <enum>QFrame::Raised</enum>
+                        </property>
+                        <layout class="QHBoxLayout" name="horizontalLayout_46">
+                         <property name="spacing">
+                          <number>0</number>
+                         </property>
+                         <property name="leftMargin">
+                          <number>0</number>
+                         </property>
+                         <property name="topMargin">
+                          <number>0</number>
+                         </property>
+                         <property name="rightMargin">
+                          <number>0</number>
+                         </property>
+                         <property name="bottomMargin">
+                          <number>0</number>
+                         </property>
+                         <item>
+                          <widget class="QFrame" name="frame_8">
+                           <property name="frameShape">
+                            <enum>QFrame::StyledPanel</enum>
+                           </property>
+                           <property name="frameShadow">
+                            <enum>QFrame::Raised</enum>
+                           </property>
+                           <layout class="QVBoxLayout" name="verticalLayout_16">
+                            <property name="spacing">
+                             <number>12</number>
+                            </property>
+                            <property name="leftMargin">
+                             <number>0</number>
+                            </property>
+                            <property name="topMargin">
+                             <number>0</number>
+                            </property>
+                            <property name="rightMargin">
+                             <number>0</number>
+                            </property>
+                            <property name="bottomMargin">
+                             <number>0</number>
+                            </property>
+                            <item>
+                             <widget class="QLabel" name="label_6">
+                              <property name="font">
+                               <font>
+                                <family>Roboto Medium</family>
+                                <pointsize>16</pointsize>
+                                <weight>75</weight>
+                                <bold>true</bold>
+                               </font>
+                              </property>
+                              <property name="text">
+                               <string>Heavy cactus</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item>
+                             <widget class="QFrame" name="frame_10">
+                              <property name="maximumSize">
+                               <size>
+                                <width>16777215</width>
+                                <height>16</height>
+                               </size>
+                              </property>
+                              <property name="frameShape">
+                               <enum>QFrame::StyledPanel</enum>
+                              </property>
+                              <property name="frameShadow">
+                               <enum>QFrame::Raised</enum>
+                              </property>
+                              <layout class="QHBoxLayout" name="horizontalLayout_9">
+                               <property name="spacing">
+                                <number>0</number>
+                               </property>
+                               <property name="leftMargin">
+                                <number>0</number>
+                               </property>
+                               <property name="topMargin">
+                                <number>0</number>
+                               </property>
+                               <property name="rightMargin">
+                                <number>0</number>
+                               </property>
+                               <property name="bottomMargin">
+                                <number>0</number>
+                               </property>
+                               <item>
+                                <widget class="QLabel" name="label_79">
+                                 <property name="maximumSize">
+                                  <size>
+                                   <width>15</width>
+                                   <height>15</height>
+                                  </size>
+                                 </property>
+                                 <property name="text">
+                                  <string/>
+                                 </property>
+                                 <property name="pixmap">
+                                  <pixmap resource="resources.qrc">:/images/assets/images/map_point.png</pixmap>
+                                 </property>
+                                 <property name="scaledContents">
+                                  <bool>true</bool>
+                                 </property>
+                                </widget>
+                               </item>
+                               <item>
+                                <widget class="QLabel" name="label_80">
+                                 <property name="text">
+                                  <string>Kitchen</string>
+                                 </property>
+                                 <property name="scaledContents">
+                                  <bool>true</bool>
+                                 </property>
+                                </widget>
+                               </item>
+                              </layout>
+                             </widget>
+                            </item>
+                           </layout>
+                          </widget>
+                         </item>
+                         <item alignment="Qt::AlignRight">
+                          <widget class="QFrame" name="frame_2">
+                           <property name="maximumSize">
+                            <size>
+                             <width>16777215</width>
+                             <height>35</height>
+                            </size>
+                           </property>
+                           <property name="frameShape">
+                            <enum>QFrame::StyledPanel</enum>
+                           </property>
+                           <property name="frameShadow">
+                            <enum>QFrame::Raised</enum>
+                           </property>
+                           <layout class="QHBoxLayout" name="horizontalLayout_4">
+                            <property name="leftMargin">
+                             <number>3</number>
+                            </property>
+                            <property name="topMargin">
+                             <number>3</number>
+                            </property>
+                            <property name="rightMargin">
+                             <number>3</number>
+                            </property>
+                            <property name="bottomMargin">
+                             <number>3</number>
+                            </property>
+                            <item>
+                             <widget class="QLabel" name="label_7">
+                              <property name="maximumSize">
+                               <size>
+                                <width>17</width>
+                                <height>26</height>
+                               </size>
+                              </property>
+                              <property name="text">
+                               <string/>
+                              </property>
+                              <property name="pixmap">
+                               <pixmap resource="resources.qrc">:/figma/assets/icons/figma/charging 2 (Traced).svg</pixmap>
+                              </property>
+                              <property name="scaledContents">
+                               <bool>true</bool>
+                              </property>
+                             </widget>
+                            </item>
+                            <item>
+                             <widget class="QLabel" name="label_4">
+                              <property name="font">
+                               <font>
+                                <family>Roboto</family>
+                                <pointsize>12</pointsize>
+                               </font>
+                              </property>
+                              <property name="text">
+                               <string>60%</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item>
+                             <widget class="QLabel" name="label">
+                              <property name="maximumSize">
+                               <size>
+                                <width>20</width>
+                                <height>26</height>
+                               </size>
+                              </property>
+                              <property name="text">
+                               <string/>
+                              </property>
+                              <property name="pixmap">
+                               <pixmap resource="resources.qrc">:/figma/assets/icons/figma/drop 2 (Traced).svg</pixmap>
+                              </property>
+                              <property name="scaledContents">
+                               <bool>true</bool>
+                              </property>
+                             </widget>
+                            </item>
+                            <item>
+                             <widget class="QLabel" name="label_3">
+                              <property name="font">
+                               <font>
+                                <family>Roboto</family>
+                                <pointsize>12</pointsize>
+                               </font>
+                              </property>
+                              <property name="text">
+                               <string>75%</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item>
+                             <widget class="QLabel" name="label_2">
+                              <property name="maximumSize">
+                               <size>
+                                <width>26</width>
+                                <height>26</height>
+                               </size>
+                              </property>
+                              <property name="text">
+                               <string/>
+                              </property>
+                              <property name="pixmap">
+                               <pixmap resource="resources.qrc">:/images/assets/images/settings.png</pixmap>
+                              </property>
+                              <property name="scaledContents">
+                               <bool>true</bool>
+                              </property>
+                             </widget>
+                            </item>
+                           </layout>
+                          </widget>
+                         </item>
+                        </layout>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QFrame" name="frame_60">
+                        <property name="minimumSize">
+                         <size>
+                          <width>80</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>80</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <property name="frameShape">
+                         <enum>QFrame::StyledPanel</enum>
+                        </property>
+                        <property name="frameShadow">
+                         <enum>QFrame::Raised</enum>
+                        </property>
+                        <layout class="QVBoxLayout" name="verticalLayout_20">
+                         <item>
+                          <widget class="QLabel" name="label_16">
+                           <property name="font">
+                            <font>
+                             <family>Roboto</family>
+                             <weight>75</weight>
+                             <bold>true</bold>
+                            </font>
+                           </property>
+                           <property name="text">
+                            <string>POT MODEL</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QLabel" name="label_17">
+                           <property name="font">
+                            <font>
+                             <family>Roboto</family>
+                            </font>
+                           </property>
+                           <property name="text">
+                            <string>IPot M1</string>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </widget>
+                      </item>
+                      <item alignment="Qt::AlignLeft">
+                       <widget class="QFrame" name="frame_16">
+                        <property name="frameShape">
+                         <enum>QFrame::StyledPanel</enum>
+                        </property>
+                        <property name="frameShadow">
+                         <enum>QFrame::Raised</enum>
+                        </property>
+                        <layout class="QHBoxLayout" name="horizontalLayout_7">
+                         <property name="leftMargin">
+                          <number>0</number>
+                         </property>
+                         <property name="topMargin">
+                          <number>0</number>
+                         </property>
+                         <property name="rightMargin">
+                          <number>0</number>
+                         </property>
+                         <property name="bottomMargin">
+                          <number>0</number>
+                         </property>
+                         <item>
+                          <widget class="QFrame" name="frame_18">
+                           <property name="minimumSize">
+                            <size>
+                             <width>80</width>
+                             <height>0</height>
+                            </size>
+                           </property>
+                           <property name="maximumSize">
+                            <size>
+                             <width>80</width>
+                             <height>16777215</height>
+                            </size>
+                           </property>
+                           <property name="frameShape">
+                            <enum>QFrame::StyledPanel</enum>
+                           </property>
+                           <property name="frameShadow">
+                            <enum>QFrame::Raised</enum>
+                           </property>
+                           <layout class="QVBoxLayout" name="verticalLayout_4">
+                            <item>
+                             <widget class="QLabel" name="label_11">
+                              <property name="font">
+                               <font>
+                                <family>Roboto</family>
+                                <weight>75</weight>
+                                <bold>true</bold>
+                               </font>
+                              </property>
+                              <property name="text">
+                               <string>KINGDOM</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item>
+                             <widget class="QLabel" name="label_10">
+                              <property name="font">
+                               <font>
+                                <family>Roboto</family>
+                               </font>
+                              </property>
+                              <property name="text">
+                               <string>Plantae</string>
+                              </property>
+                             </widget>
+                            </item>
+                           </layout>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QFrame" name="frame_19">
+                           <property name="minimumSize">
+                            <size>
+                             <width>80</width>
+                             <height>0</height>
+                            </size>
+                           </property>
+                           <property name="maximumSize">
+                            <size>
+                             <width>80</width>
+                             <height>16777215</height>
+                            </size>
+                           </property>
+                           <property name="frameShape">
+                            <enum>QFrame::StyledPanel</enum>
+                           </property>
+                           <property name="frameShadow">
+                            <enum>QFrame::Raised</enum>
+                           </property>
+                           <layout class="QVBoxLayout" name="verticalLayout_5">
+                            <item>
+                             <widget class="QLabel" name="label_13">
+                              <property name="font">
+                               <font>
+                                <family>Roboto</family>
+                                <weight>75</weight>
+                                <bold>true</bold>
+                               </font>
+                              </property>
+                              <property name="text">
+                               <string>FAMILY</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item>
+                             <widget class="QLabel" name="label_12">
+                              <property name="font">
+                               <font>
+                                <family>Roboto</family>
+                               </font>
+                              </property>
+                              <property name="text">
+                               <string>Cantaceae</string>
+                              </property>
+                             </widget>
+                            </item>
+                           </layout>
+                          </widget>
+                         </item>
+                        </layout>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QFrame" name="frame_17">
+                        <property name="frameShape">
+                         <enum>QFrame::StyledPanel</enum>
+                        </property>
+                        <property name="frameShadow">
+                         <enum>QFrame::Raised</enum>
+                        </property>
+                        <layout class="QVBoxLayout" name="verticalLayout_11">
+                         <item>
+                          <widget class="QLabel" name="label_15">
+                           <property name="font">
+                            <font>
+                             <family>Roboto</family>
+                             <weight>75</weight>
+                             <bold>true</bold>
+                            </font>
+                           </property>
+                           <property name="text">
+                            <string>DESCRIPTION</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QLabel" name="label_14">
+                           <property name="font">
+                            <font>
+                             <family>Roboto</family>
+                            </font>
+                           </property>
+                           <property name="text">
+                            <string>The word &quot;cactus&quot; derives, through Latin, from the Ancient Greek κάκτος, kaktos, a name orig
+inally used by Theophrastus for a spiny plant whose identity is not certain. Cacti occur in a 
+wide range of shapes and sizes. Most cacti live in habitats subject to at least some drought. </string>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QFrame" name="frame_6">
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>42</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>52</height>
+                      </size>
+                     </property>
+                     <property name="frameShape">
+                      <enum>QFrame::StyledPanel</enum>
+                     </property>
+                     <property name="frameShadow">
+                      <enum>QFrame::Raised</enum>
+                     </property>
+                     <layout class="QVBoxLayout" name="verticalLayout_13">
+                      <property name="bottomMargin">
+                       <number>16</number>
+                      </property>
+                     </layout>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+               </layout>
               </widget>
              </item>
             </layout>
